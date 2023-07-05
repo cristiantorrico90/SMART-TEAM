@@ -20,7 +20,7 @@ li{
 
   
   header {
-    background-color: #578eb8;
+    background-image: url(src="Imagenes/fondo.jpg");
     padding: 20px;
     color: rgb(78, 8, 8);
   }
@@ -50,14 +50,20 @@ li{
   
   /* Estilos adicionales para el contenido de la página */
 
-
+  .logo {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.2);
+  }
 
   .foto-miembro {
     transition: transform 0.3s ease-in-out;
   }
   
   .foto-miembro:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   
@@ -65,4 +71,35 @@ li{
     border-radius: 25%;
   }
   
+  .redes-sociales {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+    height: 30px;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #foto {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #foto:hover {
+    transform: rotate(360deg);
+  }
   
