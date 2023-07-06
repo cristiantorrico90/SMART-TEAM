@@ -5,15 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="Imagenes/LogoSmart.png">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/987e75b817.js" crossorigin="anonymous"></script>
-	<script defer src="index.js"></script>
+	<script defer src="script.js"></script>
 	<title>Inicio | SMART TEAM</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
 </head>
 
 <body>
@@ -23,101 +19,84 @@
 			<img id="logo" src="Imagenes/LogoSmart.png" alt="Logo SMART TEAM" width="200px" id="headerTexto">			
 		</div>
 
+		<button id="toggleNav">
+			<i></i>
+		</button>
+		<nav>
+			<ul>
+				<li><a href="#banner">INICIO</a></li>
+				<li><a href="#integrantes">NOSOTROS</a></li>
+				<li><a href="#textoServicios">SERVICIOS</a></li>
+				<li><a href="#Contacto">CONTACTO</a></li>
+			</ul>
+		</nav>
+
 		<div class="redes-sociales">
 			<a href="https://www.facebook.com/tu-pagina-de-facebook" target="_blank">
 			  <img src="Imagenes/2227.jpg" alt="Facebook">
 			</a>
-			<a href="#https://www.instagram.com/" target="_blank">
+			<a href="https://www.instagram.com/" target="_blank">
 			  <img src="Imagenes/2227.jpg" alt="Instagram">
 			</a>
-			<a href="#https://wa.me/tu-numero-de-whatsapp" target="_blank">
+			<a href="https://wa.me/tu-numero-de-whatsapp" target="_blank">
 			  <img src="Imagenes/2227.jpg" alt="WhatsApp">
 			</a>
-		  </div>
-		  
+		</div>
 	</header>
 
-	<button class="nav-toggle">
-		<i class="fa-solid fa-bars"></i>
-	</button>
-	<nav class="navegador">
-		<ul class="nav-menu nav-menu_visible">
-			<li class="nav-menu-item"><a href="#banner">INICIO</a></li>
-			<li class="nav-menu-item"><a href="#integrantes">NOSOTROS</a></li>
-			<li class="nav-menu-item"><a href="#textoServicios">SERVICIOS</a></li>
-			<li class="nav-menu-item"><a href="#Contacto">CONTACTO</a></li>
-		</ul>
-	</nav>
-
-	<!-- Sobre Nosotros -->
-	<section id="banner">
-
-		<div class="container">
-			<img id="foto" src="Imagenes/Diseño sin título.png" alt="Equipo SMART" width="200px">
-		</div>
-
-		<div class="container_2">
-			<img id="fotobanner" src="Imagenes/Diseño sin título.png" alt="" width="200px">
-		</div>
-
-		<div class="container_info">
-			<h2 id="eslogan">¡ Concretamos tus ideas !</h2>
-		</div>
 
 		<div class="biografia">
-			<h3 id=" textoBio">¿ Quiénes somos ?</h3>
-			<p id="parrafoBio"> <strong>SMART TEAM se formó como un grupo de estudiantes</strong> decididos a aportar valor a su comunidad
-				educativa.<br>
-				<strong>Somos un equipo de desarrollo de sistemas de aplicaciones y aplicaciones web.</strong> Contamos con
-				conocimientos en diversos lenguajes y plataformas, <br> lo que nos permite adaptarnos y concretar cualquier
-				idea.</p>
+			<h3 id="textoBio">¿Quiénes somos?</h3>
+			<p id="parrafoBio"><strong>SMART TEAM se formó como un grupo de estudiantes</strong> decididos a aportar valor a su comunidad educativa.<br>
+				<strong>Somos un equipo de desarrollo de sistemas de aplicaciones y aplicaciones web.</strong> Contamos con conocimientos en diversos lenguajes y plataformas,<br> lo que nos permite adaptarnos y concretar cualquier idea.</p>
 		</div>
 
 		<hr>
-
-		<!-- Fotos de los Integrantes-->
-
 	</section>
 
+	<script src="script.js"></script>
+
+
+<!-- Fotos de los Integrantes-->
 	<section id="integrantes">
 		<div class="nosotros">
 			<h2 id="textoNos">Nosotros</h2>
 		</div>
 		<article id="equipo">
 
-			<div class="contenedor">
-				<figure>
-			
-					<img src="Imagenes/CristianTorrico.jpg" alt="Cristian Torrico" width="200px" class="foto-miembro">
+		<div class="container">	
 
+			<!--tarjeta de cristian-->
+			<div class="card">
+				<figure>
+					<img src="Imagenes/CristianTorrico.jpg" alt="Cristian Torrico" width="200px" class="foto-miembro">
 					<div class="capa">
 						<h3> Cristian Torrico</h3>
-						<P>Cristian Torrico es estudiante de ultimo año de la carrera de sistemas, Se desataca en diseño de interfaz, actualmente se especializa en JAVA y Big Data. <br> Posee conocimientos en HTML, CSS, JavaScripts y Python.</P>
+						<P>Cristian Torrico es estudiante de ultimo año de la carrera de sistemas, Se desataca en diseño de interfaz, actualmente se especializa en JAVA y Big Data. <br> Posee conocimientos en HTML, CSS, JavaScripts y Python.
+						</P>
 
 						<h4>Redes Sociales:</h4>
 						<ul>
 							<li>
-								<a href="https://github.com/cristiantorrico90" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Cristian Torrico" width="25px" class="logo"> </a> 
+								<a href="https://github.com/cristiantorrico90" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Cristian Torrico" width="25px" class="foto-miembro"> </a> 
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/in/cristian-torrico/" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Cristian Torrico" width="28px" class="logo"></a>
+								<a href="https://www.linkedin.com/in/cristian-torrico/" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Cristian Torrico" width="28px" class="foto-miembro"></a>
 							</li>
 							<li>
-								<a href="" target="_blank"> <img src="Imagenes/logoGmail.png" alt="mail de Cristian Torrico" width="30px" class="logo"></a>
+								<a href="" target="_blank"> <img src="Imagenes/logoGmail.png" alt="mail de Cristian Torrico" width="30px" class="foto-miembro"></a>
 							</li>							
 						</ul>
-
-						<!--<a href="https://github.com/cristiantorrico90" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Cristian Torrico" width="20px"></a>
-						<a href="https://www.linkedin.com/in/cristian-torrico/" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Cristian Torrico" width="28px"></a>
-						<a href="https://mail.google.com/mail/u/0/" target="_blank"> <img src="Imagenes/gmail.png" alt="mail de Cristian Torrico" width="25px"></a>-->
-
 					</div>
 				</figure>
 			</div>
-	<hr>		
-			<div class="contenedor">
+			
+
+
+			<!--tajeta de denise-->
+			<div class="card">
 				<figure>
-					<img src="" alt="Denise Schiavonni">
+					<img src="Imagenes/fotos-perfil-facebook-gratis.jpg" alt="Denise Schiavonni" width="200px" class="foto-miembro">
 					<div class="capa">
 						<h3>Denise Schiavonni</h3>
 						<P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptatum alias
@@ -127,23 +106,23 @@
 						<h4>Redes Sociales:</h4>
 						<ul>
 							<li>
-								<a href="" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Denise Schiavonni" width="22px" <p>GitHub</p></a>
+								<a href="" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Denise Schiavonni" width="25px" class="foto-miembro"></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/in/denise-schiavoni-56a218242" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Denise Schiavonni" width="28px"<p>Linkedin</p></a>
+								<a href="https://www.linkedin.com/in/denise-schiavoni-56a218242" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Denise Schiavonni" width="28px" class="foto-miembro"></a>
 							</li>
 							<li>
-								<a href="" target="_blank"> <img src="Imagenes/gmail.png" alt="mail de Denise Schiavonni" width="22px" <p>Gmail</p></a>
+								<a href="" target="_blank"> <img src="Imagenes/logoGmail.png" alt="mail de Denise Schiavonni" width="30px" class="foto-miembro"></a>
 							</li>							
 						</ul>
 
 					</div>
 				</figure>
 			</div>
-	<hr>		
-			<div class="contenedor">
+		
+			<div class="card">
 				<figure>
-					<img src="" alt="Marcelo Ramirez">
+					<img src="Imagenes/fotos-perfil-facebook-gratis.jpg" alt="Marcelo Ramirez" width="200px" class="foto-miembro">
 					<div class="capa">
 						<h3>Marcelo Ramirez</h3>
 						<P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptatum alias
@@ -153,13 +132,13 @@
 						<h4>Redes Sociales:</h4>
 						<ul>
 							<li>
-								<a href="" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Marcelo Ramirez" width="22px" <p>GitHub</p></a>
+								<a href="" target="_blank"><img src="Imagenes/LogoGitHub.png" alt="github de Marcelo Ramirez" width="25px" class="foto-miembro"></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/in/marcelo-a-ramirez/" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Marcelo Ramirez" width="28px" <p>Linkedin</p></a>
+								<a href="https://www.linkedin.com/in/marcelo-a-ramirez/" target="_blank"> <img src="Imagenes/logoLinkedin.png" alt="Linkedin de Marcelo Ramirez" width="28px" class="foto-miembro"></a>
 							</li>
 							<li>
-								<a href="" target="_blank"> <img src="Imagenes/gmail.png" alt="mail de Marcelo Ramirez" width="22px" <p>Gmail</p></a>
+								<a href="" target="_blank"> <img src="Imagenes/logoGmail.png" alt="mail de Marcelo Ramirez" width="30px"class="foto-miembro"></a>
 							</li>							
 						</ul>
 
@@ -167,10 +146,10 @@
 					</div>
 				</figure>
 			</div>
-	<hr>		
-			<div class="contenedor">
+		
+			<div class="card">
 				<figure>
-					<img src="" alt="Melisa Aquino">
+					<img src="Imagenes/fotos-perfil-facebook-gratis.jpg" alt="Melisa Aquino" width="200px" class="foto-miembro">
 					<div class="capa">
 						<h3>Melisa Aquino</h3>
 						<P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptatum alias
@@ -194,8 +173,8 @@
 					</div>
 				</figure>
 			</div>
-	<hr>		
-			<div class="contenedor">
+		
+			<div class="card">
 				<figure>
 					<img src="" alt="Diego Mato">
 					<div class="capa">
@@ -220,23 +199,23 @@
 					</div>
 				</figure>
 			</div>
-
-	<hr>	
+		</div>
+	
 		</article>
 		
 	</section>
 
 
 	<section>
-		<div class="servicio">
+		<div class="">
 			<h1 id="textoServicios">Nuestros Servicios</h1>
 		</div>
 
 		<!-- ---- Tarjetas de Servicio ---- -->
-		<div class="container__card">
+		<div class="">
 
-			<div class="card__father">
-				<div class="card">
+			<div class="">
+				<div class="">
 					<div class="card__front" style="background-image: url(imagenes/analisis.jpg);">
 						<div class="bg"></div>
 						<div class="body__card_front">
@@ -244,8 +223,8 @@
 							<h3>Comprendiendo tus necesidades, impulsando el éxito</h3>
 						</div>
 					</div>
-					<div class="card__back">
-						<div class="body__card_back">
+					<div class="">
+						<div class="">
 							<h1></h1>
 							<p>En nuestro equipo de desarrollo web, <strong>valoramos el poder del análisis.</strong> Antes de comenzar cualquier proyecto, realizamos un análisis exhaustivo para <br> <strong>comprender tus necesidades, identificar objetivos y establecer una base sólida.</strong> <br> Utilizamos técnicas de investigación y estudio de mercado para asegurarnos de que tu sitio web cumpla con tus expectativas y supere las de tus <br> competidores. Con nuestro enfoque analítico, <strong>optimizamos la funcionalidad, mejoramos la experiencia del usuario y aumentamos la visibilidad en los <br> motores de búsqueda.</strong> Confía en nosotros para impulsar el éxito de tu proyecto web.</p>
 						</div>
@@ -253,17 +232,17 @@
 				</div>
 			</div>
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(imagenes/gestion.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
+			<div class="">
+				<div class="">
+					<div class="" style="background-image: url(imagenes/gestion.jpg);">
+						<div class=""></div>
+						<div class="">
 							<h2>Gestión</h2>
 							<h3>Transformando Ideas en Resultados</h3>
 						</div>
 					</div>
-					<div class="card__back">
-						<div class="body__card_back">
+					<div class="">
+						<div class="">
 							<h1></h1>
 							<p>En nuestro equipo de desarrollo web, nos encargamos de gestionar cada aspecto de tu proyecto para convertir tus ideas en resultados tangibles.  <br> Desde la planificación estratégica hasta la entrega puntual, nuestra gestión efectiva garantiza que tu proyecto se ejecute sin problemas, cumpliendo <br> con los plazos y superando tus expectativas. Confía en nosotros para llevar adelante tu proyecto con una gestión integral y resultados excepcionales.
 							</p>
@@ -272,18 +251,18 @@
 				</div>
 			</div>
 
-			<div class="card__father">
-				<div class="card">
-					<div class="card__front" style="background-image: url(imagenes/implementacion.jpg);">
-						<div class="bg"></div>
-						<div class="body__card_front">
+			<div class="">
+				<div class="">
+					<div class="" style="background-image: url(imagenes/implementacion.jpg);">
+						<div class=""></div>
+						<div class="">
 							<h2>Implementación</h2>
 							<h3>Llevando tu Visión a la Realidad Digital</h3>
 						</div>
 
 					</div>
-					<div class="card__back">
-						<div class="body__card_back">
+					<div class="">
+						<div class="">
 							<h1></h1>
 							<p> <strong>Transformamos tus diseños en un sitio web funcional y atractivo.</strong> Con nuestra experiencia técnica y atención al detalle, aseguramos una implementación <br> impecable que da vida a tu visión. <br> Desde el desarrollo front-end hasta las pruebas exhaustivas y la integración de bases de datos, <strong>nos aseguramos de que cada elemento funcione a la perfección.</strong>
 							</p>
