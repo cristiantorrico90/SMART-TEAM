@@ -1,5 +1,8 @@
+
+
 header {
 	position: relative;
+
 }
 
 .redes-sociales {
@@ -51,7 +54,7 @@ nav ul li a {
 	color: rgb(107, 17, 17);
 }
 
-/* ... */
+/* en esta seccion se dara formato de tajeta con sus efecto de animacion a las fotos de perfil */
 
 .foto-miembro {
 	border: 1px solid #a82b2b;
@@ -132,4 +135,12 @@ a {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+/*en esta seccion se dara efecto de desplazamiento a la pagina con la opcion selecionada en el banner*/
+
+html {
+	scroll-behavior: smooth;
+	
+}
+
 
