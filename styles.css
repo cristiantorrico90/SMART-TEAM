@@ -25,7 +25,7 @@ nav {
 	height: 0;
 	overflow: hidden;
 	transition: height 0.4s ease-in-out;
-	background-color: #f9f9f9;
+	background-color: #bdb3e2;
 	padding: 20px;
 	box-sizing: border-box;
 }
@@ -54,7 +54,7 @@ nav ul li a {
 	color: rgb(145, 91, 91);
 }
 
-/* en esta seccion se dara formato de tajeta con sus efecto de animacion a las fotos de perfil */
+/* en esta seccion se dara formato de tarjeta con sus efecto de animacion a las fotos de perfil */
 
 .foto-miembro {
 	border: 1px solid #5125a3;
@@ -181,7 +181,33 @@ html {
 
 
 
+  /*en esta seccion le damos efectos a los iconos de herramientas*/
+
+  .foto-miembro {
+	cursor: pointer;
+  }
   
-
-
-
+  .options {
+	display: none;
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .options.visible {
+	display: block;
+	opacity: 1;
+	max-height: 500px; /* Ajusta esta altura máxima según sea necesario */
+  }
+  
+  .options ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .options li {
+	padding: 5px 0;
+  }
+  
