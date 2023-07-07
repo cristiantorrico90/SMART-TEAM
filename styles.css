@@ -57,7 +57,7 @@ nav ul li a {
 /* en esta seccion se dara formato de tajeta con sus efecto de animacion a las fotos de perfil */
 
 .foto-miembro {
-	border: 1px solid #a82b2b;
+	border: 1px solid #5125a3;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(69, 57, 172, 0.1);
 	padding: 10px;
@@ -161,11 +161,11 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
   }
 
 
-  /*aca le damos animacion a la pagina*/
+  /*aca le damos animacion a el banner de navegacon*/
 
   .nav ul li a {
     transition: color 0.3s ease;
@@ -177,6 +177,10 @@ html {
 	font-size: 1.5em; /* Ajusta el valor para el nivel de agrandamiento deseado */
 	
   }
+
+
+
+
   
 
 
